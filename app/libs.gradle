@@ -1,0 +1,40 @@
+project.ext {
+    supportLibraryVersion = "27.1.1"
+    androidArchVersion = "1.1.1"
+    timberVersion = "4.7.0"
+    retrofitVersion = "2.1.0"
+    okHttpVersion = "3.4.1"
+    glideVersion = "3.8.0"
+}
+
+dependencies {
+
+    //Support Design
+    implementation "com.android.support:design:$project.supportLibraryVersion"
+
+    //timber
+    implementation "com.jakewharton.timber:timber:$project.timberVersion"
+
+    // recyclerView
+    implementation "com.android.support:recyclerview-v7:$project.supportLibraryVersion"
+
+    //retrofit
+    implementation "com.squareup.retrofit2:retrofit:$project.retrofitVersion"
+    implementation "com.squareup.retrofit2:converter-gson:$project.retrofitVersion"
+
+    //okhttp
+    implementation "com.squareup.okhttp3:okhttp:$project.okHttpVersion"
+    implementation "com.squareup.okhttp3:logging-interceptor:$project.okHttpVersion"
+
+    //glid
+    implementation "com.github.bumptech.glide:glide:$project.glideVersion"
+
+    //arch_room
+    implementation "android.arch.persistence.room:runtime:$project.androidArchVersion"
+    annotationProcessor "android.arch.persistence.room:compiler:$project.androidArchVersion"
+
+    //arch_lifecycle
+    implementation "android.arch.lifecycle:runtime:$project.androidArchVersion"
+    implementation "android.arch.lifecycle:extensions:$project.androidArchVersion"
+    annotationProcessor "android.arch.lifecycle:compiler:$project.androidArchVersion"
+}
